@@ -1,4 +1,3 @@
-// App.java
 import java.util.Scanner;
 
 public class App {
@@ -11,7 +10,7 @@ public class App {
             System.out.println("1. Part1");
             System.out.println("2. Part2");
             System.out.println("3. Part3");
-            System.out.println("4. Part4");
+            System.out.println("4. Part4 (YouTube Link Finder)");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
 
@@ -27,7 +26,7 @@ public class App {
                 case 2:
                     System.out.println("Running Part2:");
                     Part2 part2 = new Part2();
-                    part2.testSimpleGene(); // Corrected to call testSimpleGene()
+                    part2.testSimpleGene();
                     break;
                 case 3:
                     System.out.println("Running Part3:");
@@ -35,9 +34,9 @@ public class App {
                     part3.testing();
                     break;
                 case 4:
-                    System.out.println("Running Part4:");
+                    System.out.println("Running Part4 (YouTube Link Finder):");
                     Part4 part4 = new Part4();
-                    part4.runPart4();
+                    part4.findYouTubeLinks(); // Automatically fetches the page
                     break;
                 case 0:
                     System.out.println("Exiting...");
